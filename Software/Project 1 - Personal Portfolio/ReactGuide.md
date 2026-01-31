@@ -848,3 +848,135 @@ Here's a complete example putting everything together:
 ### App.js - Complete Version
 
 ```javascript
+import './App.css';
+import profilePhoto from './profile.jpg';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="header">
+        <h1>Jane Doe</h1>
+        <p>Computer Science Student | Web Developer | Problem Solver</p>
+      </header>
+
+      <main className="main-content">
+        <section className="about" id="about">
+          <h2>About Me</h2>
+          <div className="about-content">
+            <img src={profilePhoto} alt="Jane Doe" className="profile-photo" />
+            <p>
+              Hi! I'm a junior studying Computer Science at State University. 
+              I'm passionate about creating web applications that solve real-world 
+              problems. In my free time, I enjoy hiking, reading sci-fi novels, 
+              and contributing to open-source projects.
+            </p>
+          </div>
+        </section>
+
+        <section className="projects" id="projects">
+          <h2>Projects</h2>
+          <div className="project-item">
+            <h3>
+              <a 
+                href="https://github.com/yourusername/weather-dashboard" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Weather Dashboard
+              </a>
+            </h3>
+            <p>
+              A React application that displays real-time weather data for 
+              multiple cities. Uses OpenWeather API and includes 5-day forecasts.
+            </p>
+          </div>
+          <div className="project-item">
+            <h3>
+              <a 
+                href="https://github.com/yourusername/task-manager" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Task Manager
+              </a>
+            </h3>
+            <p>
+              A full-stack to-do list application built with React and Node.js. 
+              Features include user authentication and cloud storage.
+            </p>
+          </div>
+        </section>
+
+        <section className="experience" id="experience">
+          <h2>Experience</h2>
+          <div className="experience-item">
+            <h3>Software Engineering Intern</h3>
+            <p className="company">Tech Company Inc. | Summer 2024</p>
+            <p>
+              Developed new features for the company's web platform using React 
+              and Python. Collaborated with a team of 5 engineers using Agile methodology.
+            </p>
+          </div>
+          <div className="experience-item">
+            <h3>Teaching Assistant</h3>
+            <p className="company">State University | Fall 2023 - Present</p>
+            <p>
+              Assist in teaching Introduction to Programming. Hold office hours 
+              and grade assignments for a class of 50 students.
+            </p>
+          </div>
+        </section>
+
+        <section className="involvement" id="involvement">
+          <h2>Involvement</h2>
+          <div className="involvement-item">
+            <h3>President, Computer Science Club</h3>
+            <p>
+              Lead a team organizing workshops and hackathons. Grew membership 
+              from 20 to 80 students in one year.
+            </p>
+          </div>
+          <div className="involvement-item">
+            <h3>Volunteer, Code for Good</h3>
+            <p>
+              Teach basic programming to high school students from underserved 
+              communities. Dedicate 4 hours per week.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer className="footer">
+        <div className="social-links">
+          <a 
+            href="https://linkedin.com/in/yourprofile" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            LinkedIn
+          </a>
+          <a 
+            href="https://github.com/yourusername" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            GitHub
+          </a>
+          <a 
+            href="mailto:your.email@example.com"
+            className="social-link"
+          >
+            Email
+          </a>
+        </div>
+        <p>&copy; 2024 Jane Doe. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
